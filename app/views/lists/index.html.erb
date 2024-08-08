@@ -1,10 +1,13 @@
 <div class="container">
+<h1>My Lists</h1>
   <div class="cards">
-    <% @lists.each do |list| %>
-      <h2>
-        <%= list.name %>
-      </h2>
-    <% end %>
+    <ul>
+      <% @lists.each do |list| %>
+        <li>
+          <%= link_to list.name, list_path(list) %>
+        </li>
+      <% end %>
+    </ul>
   </div>
 </div>
 </div>
