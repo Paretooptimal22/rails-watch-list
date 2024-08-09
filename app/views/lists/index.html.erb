@@ -1,6 +1,9 @@
 <div class="container">
 <h1>My Lists</h1>
-  <div class="cards">
+  <div class="add-list-btn mt-3">
+    <%= link_to 'Add List', new_list_path, class: 'btn btn-primary' %>
+  </div>
+  <div class="cards mt-3">
     <ul>
       <% @lists.each do |list| %>
         <li>

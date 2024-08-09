@@ -5,4 +5,7 @@
     <%= f.association :movie, collection: @movies %>
     <%= f.submit 'Submit', class: 'btn btn-primary mt-2' %>
   <% end %>
+  <%= link_to lists_path, class: 'btn btn-primary mt-3' do %>
+      <i class="fa-solid fa-angles-left"></i>
+    <% end %>
 </div>
